@@ -1,2 +1,389 @@
-# otoclana.github.io
-Pag web Otoclana
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTOCLANA S.A.S - Alquiler, Vivienda Urbana y Ventas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .nav-glass {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.7));
+        }
+        /* Estilos para el carrusel de fondo Hero */
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            z-index: 0;
+        }
+        .hero-slide.active {
+            opacity: 1;
+        }
+
+        /* Estilos personalizados para el carrusel de Ventas */
+        .ventas-container {
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .ventas-container::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 nav-glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center text-left">
+            <div class="text-2xl font-serif font-bold tracking-tighter text-blue-900 text-left">
+                OTOCLANA <span class="text-amber-500 text-sm font-sans block -mt-2">S.A.S</span>
+            </div>
+            <div class="hidden md:flex space-x-6 font-semibold text-[10px] uppercase tracking-widest text-slate-600 text-left">
+                <a href="#inicio" class="hover:text-blue-900 transition">Inicio</a>
+                <a href="#propiedades" class="hover:text-blue-900 transition">Fincas</a>
+                <a href="#ventas" class="hover:text-blue-900 transition text-amber-600 font-bold">Ventas</a>
+                <a href="#apartamentos" class="hover:text-blue-900 transition">Urbana</a>
+                <a href="otoclana_contacto.html" class="hover:text-blue-900 transition">Contacto</a>
+            </div>
+            <a href="https://wa.me/571234567890?text=Hola%2C%20estoy%20interesado%20en%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20propiedades%20de%20OTOCLANA%20S.A.S." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="bg-blue-900 text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blue-800 transition shadow-lg text-center">
+                Reservar
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section con Carrusel Automático -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden pt-20">
+        <div id="hero-slides" class="absolute inset-0 z-0">
+            <div class="hero-slide active" style="background-image: url('https://lh3.googleusercontent.com/d/14IckryA0TD3BnpVg4Enpfq4y7JJr79g9');"></div>
+            <div class="hero-slide" style="background-image: url('https://lh3.googleusercontent.com/d/11tbMCO696WyfKx-P8_fpzXsLIMGsaL5T');"></div>
+            <div class="hero-slide" style="background-image: url('https://lh3.googleusercontent.com/d/13AHV93VDXtwhLCDtote49dlKexSeNR1W');"></div>
+        </div>
+        
+        <div class="absolute inset-0 hero-overlay z-10"></div>
+
+        <div class="relative z-20 px-4 max-w-5xl text-center text-white">
+            <h1 class="font-serif text-5xl md:text-7xl mb-6 leading-tight drop-shadow-2xl text-white text-center">
+                Inversiones que trascienden generaciones
+            </h1>
+            <p class="text-lg md:text-xl font-light mb-10 opacity-90 max-w-3xl mx-auto text-white text-center text-white">
+                Desde escapadas tropicales hasta tu próximo hogar permanente. Descubre el portafolio de propiedades más exclusivo de Antioquia y la Costa Caribe.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#propiedades" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full font-bold shadow-xl transition transform hover:scale-105 text-center">
+                    Fincas de Recreo
+                </a>
+                <a href="#ventas" class="bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 rounded-full font-bold shadow-xl transition transform hover:scale-105 text-center">
+                    Propiedades en Venta
+                </a>
+                <a href="#apartamentos" class="bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 text-white px-8 py-4 rounded-full font-bold transition text-center text-white">
+                    Alquiler Urbano
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Fincas -->
+    <section id="propiedades" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16 text-center">
+            <span class="text-amber-500 font-bold uppercase tracking-[0.3em] text-xs text-center text-center">Escapadas de Recreo</span>
+            <h2 class="font-serif text-4xl md:text-5xl mt-2 text-blue-900 text-center text-blue-900 text-center">Nuestras Fincas</h2>
+            <div class="w-20 h-1 bg-amber-500 mx-auto mt-6"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="group bg-white rounded-3xl shadow-xl overflow-hidden transform transition duration-500 hover:-translate-y-2 border border-slate-100">
+                <div class="h-64 overflow-hidden text-center">
+                    <img src="https://lh3.googleusercontent.com/d/14IckryA0TD3BnpVg4Enpfq4y7JJr79g9" alt="Hacienda Papayos" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-8 text-center">
+                    <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-[10px] font-bold uppercase mb-4 inline-block text-center">Sopetrán</span>
+                    <h3 class="font-serif text-2xl mb-3 text-blue-900 text-center text-blue-900 text-center">Hacienda Papayos</h3>
+                    <p class="text-slate-600 text-xs mb-6 italic text-center text-slate-600">Capacidad 30 personas</p>
+                    <a href="https://otoclana.wixsite.com/otoclana/AlquilerPapayos" class="text-blue-900 font-bold hover:underline text-center text-blue-900">Ver Detalles</a>
+                </div>
+            </div>
+
+            <div class="group bg-white rounded-3xl shadow-xl overflow-hidden transform transition duration-500 hover:-translate-y-2 border border-slate-100 text-center">
+                <div class="h-64 overflow-hidden text-center">
+                    <img src="https://lh3.googleusercontent.com/d/12NT3mMRGe2ddqMvRoWU6AdmYkE79m7AI" alt="Los Mangos" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-8 text-center text-center">
+                    <span class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-[10px] font-bold uppercase mb-4 inline-block text-center text-center">Santa Fe</span>
+                    <h3 class="font-serif text-2xl mb-3 text-blue-900 text-center text-blue-900 text-center">Los Mangos</h3>
+                    <p class="text-slate-600 text-xs mb-6 italic text-center text-slate-600 text-center">Privacidad absoluta</p>
+                    <a href="https://otoclana.wixsite.com/otoclana/AlquilerLosMangos" class="text-blue-900 font-bold hover:underline text-center text-blue-900 text-center">Ver Detalles</a>
+                </div>
+            </div>
+
+            <div class="group bg-white rounded-3xl shadow-xl overflow-hidden transform transition duration-500 hover:-translate-y-2 border border-slate-100 text-center text-center">
+                <div class="h-64 overflow-hidden text-center">
+                    <img src="https://lh3.googleusercontent.com/d/13AHV93VDXtwhLCDtote49dlKexSeNR1W" alt="El Higuerón" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                </div>
+                <div class="p-8 text-center text-center text-center text-center">
+                    <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-[10px] font-bold uppercase mb-4 inline-block text-center text-center text-center text-center text-center text-center">Llanogrande</span>
+                    <h3 class="font-serif text-2xl mb-3 text-blue-900 text-center text-blue-900 text-center text-blue-900 text-center text-center">El Higuerón</h3>
+                    <p class="text-slate-600 text-xs mb-6 italic text-center text-slate-600 text-center">Eventos & Descanso</p>
+                    <a href="https://otoclana.wixsite.com/otoclana/alquilerElHigueron" class="text-blue-900 font-bold hover:underline text-center text-blue-900 text-center text-blue-900">Ver Detalles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: Estadía Permanente (Ventas) -->
+    <section id="ventas" class="py-24 px-6 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 text-center">
+                <span class="text-amber-500 font-bold uppercase tracking-[0.3em] text-xs text-center text-center">Estadía Permanente</span>
+                <h2 class="font-serif text-4xl md:text-5xl mt-2 text-white text-center text-white text-center text-white text-center text-white">Propiedades en Venta</h2>
+                <p class="text-slate-400 mt-4 max-w-xl mx-auto text-center text-slate-400 text-center text-slate-400 text-center text-slate-400">Portafolio de inversión exclusiva y propiedades de alta valorización.</p>
+                <div class="w-20 h-1 bg-amber-500 mx-auto mt-6"></div>
+            </div>
+
+            <div class="relative group">
+                <button onclick="scrollVentas('left')" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-30 bg-amber-500 w-12 h-12 rounded-full flex items-center justify-center shadow-2xl opacity-0 group-hover:opacity-100 transition-opacity text-black">
+                    <i class="fas fa-chevron-left text-black"></i>
+                </button>
+                <button onclick="scrollVentas('right')" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-30 bg-amber-500 w-12 h-12 rounded-full flex items-center justify-center shadow-2xl opacity-0 group-hover:opacity-100 transition-opacity text-black text-black text-black">
+                    <i class="fas fa-chevron-right text-black"></i>
+                </button>
+
+                <div id="ventas-slider" class="ventas-container flex gap-6 overflow-x-auto pb-10 scroll-smooth px-4 text-left">
+                    
+                    <!-- Venta: Edificio Baracoa (Cartagena) - ACTUALIZADA CON IMAGEN SOLICITADA -->
+                    <div class="min-w-[85%] md:min-w-[450px] relative rounded-3xl overflow-hidden shadow-2xl group/card h-[550px] flex-shrink-0 border border-slate-800 text-left">
+                        <img src="https://lh3.googleusercontent.com/d/17DQkmnXR61_uSfxvI0Tmil_Ceo2GELjr" alt="Baracoa Cartagena" class="absolute inset-0 w-full h-full object-cover group-hover/card:scale-110 transition duration-1000">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-10 z-20 text-left">
+                            <h3 class="font-serif text-3xl mb-4 leading-tight text-white text-left">Edificio Baracoa</h3>
+                            <p class="text-slate-300 text-sm mb-6 max-w-xs text-left">Frente a la Bahía de Cartagena. Vista ininterrumpida y eterna.</p>
+                            <div class="grid grid-cols-2 gap-y-3 gap-x-4 text-[11px] font-semibold text-amber-400 uppercase tracking-wider text-left text-amber-400">
+                                <span><i class="fas fa-expand mr-2 opacity-70"></i> 195 m²</span>
+                                <span><i class="fas fa-bed mr-2 opacity-70"></i> 4 Hab + Serv</span>
+                                <span><i class="fas fa-anchor mr-2 opacity-70"></i> Frente Bahía</span>
+                                <span><i class="fas fa-umbrella-beach mr-2 opacity-70 text-amber-400"></i> Cerca a Playa</span>
+                            </div>
+                            <a href="https://otoclana.wixsite.com/otoclana/VentaBaracoa" class="mt-6 inline-block bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-[10px] uppercase font-bold tracking-widest transition text-white text-center">Ver Propiedad</a>
+                        </div>
+                    </div>
+
+                  <!-- Venta: Residencia Mansión Palmas -->
+                    <div class="min-w-[85%] md:min-w-[450px] relative rounded-3xl overflow-hidden shadow-2xl group/card h-[550px] flex-shrink-0">
+                        <img src="https://lh3.googleusercontent.com/d/1Z9G7zoCemKUo7YQHO6CcyOgg9HvdAOz7" alt="Mansion Las Palmas" class="absolute inset-0 w-full h-full object-cover group-hover/card:scale-110 transition duration-1000">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-10 z-20">
+                            <h3 class="font-serif text-3xl mb-4 leading-tight">Mansion Alto de las Palmas</h3>
+                            <p class="text-slate-300 text-sm mb-6 max-w-xs">Arquitectura clásica con todos los confort del mundo moderno.</p>
+                            <div class="grid grid-cols-2 gap-y-3 gap-x-4 text-[11px] font-semibold text-amber-400 uppercase tracking-wider">
+                                <span><i class="fas fa-bed mr-2 opacity-70"></i> 4 Habitaciones</span>
+                                <span><i class="fas fa-bath mr-2 opacity-70"></i> 6 Baños</span>
+                                <span><i class="fas fa-swimming-pool mr-2 opacity-70"></i> Piscina & Turco</span>
+                                <span><i class="fas fa-tree mr-2 opacity-70"></i> Lote 8.000m²</span>
+                            </div>
+                           <a href="https://otoclana.wixsite.com/otoclana/VentaValleAlto" class="mt-6 inline-block bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-[10px] uppercase font-bold tracking-widest transition text-white text-center">Ver Propiedad</a>
+                        </div>
+                    </div>
+
+
+                    <!-- Venta: Edificio Natuzzi -->
+                    <div class="min-w-[85%] md:min-w-[450px] relative rounded-3xl overflow-hidden shadow-2xl group/card h-[550px] flex-shrink-0 border border-slate-800 text-left">
+                        <img src="https://lh3.googleusercontent.com/d/1WGnWFHzLWkCCZ-_zmaRAI4rw7MONzxk7" alt="Natuzzi Venta" class="absolute inset-0 w-full h-full object-cover group-hover/card:scale-110 transition duration-1000">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-10 z-20 text-left">
+                            <h3 class="font-serif text-3xl mb-4 leading-tight text-white text-left text-white">Edificio Natuzzi</h3>
+                            <p class="text-slate-300 text-sm mb-6 max-w-xs text-left">Sofisticación urbana con la calma de un refugio natural.</p>
+                            <div class="grid grid-cols-2 gap-y-3 gap-x-4 text-[11px] font-semibold text-amber-400 uppercase tracking-wider text-left">
+                                <span><i class="fas fa-layer-group mr-2 opacity-70"></i> Piso 9</span>
+                                <span><i class="fas fa-bed mr-2 opacity-70"></i> 2 Habitaciones</span>
+                                <span><i class="fas fa-panorama mr-2 opacity-70"></i> Amplio Balcón</span>
+                                <span><i class="fas fa-tree mr-2 opacity-70"></i> Frente al Parque</span>
+                            </div>
+                            <a href="https://otoclana.wixsite.com/otoclana/VentaNatuzzi" class="mt-6 inline-block bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-[10px] uppercase font-bold tracking-widest transition text-white text-center">Ver Propiedad</a>
+                        </div>
+                    </div>
+
+                    <!-- Venta 1: Duplex de Lujo en el Poblado -->
+                    <div class="min-w-[85%] md:min-w-[450px] relative rounded-3xl overflow-hidden shadow-2xl group/card h-[550px] flex-shrink-0 text-left">
+                        <img src="https://lh3.googleusercontent.com/d/1zAGZ82sQfHHHFOUz5natJrbkWP1kYQFF" alt="Duplex Venta" class="absolute inset-0 w-full h-full object-cover group-hover/card:scale-110 transition duration-1000">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-10 z-20 text-left">
+                            <h3 class="font-serif text-3xl mb-4 leading-tight text-white text-left text-white">Duplex de Lujo en el Poblado</h3>
+                            <p class="text-slate-300 text-sm mb-6 max-w-xs text-left">Hermosas vistas en la mejor ubicación de la ciudad.</p>
+                            <div class="grid grid-cols-2 gap-y-3 gap-x-4 text-[11px] font-semibold text-amber-400 uppercase tracking-wider text-left">
+                                <span><i class="fas fa-bed mr-2 opacity-70"></i> 4 Habitaciones</span>
+                                <span><i class="fas fa-bath mr-2 opacity-70"></i> 4 Baños</span>
+                                <span><i class="fas fa-layer-group mr-2 opacity-70"></i> Duplex Premium</span>
+                                <span><i class="fas fa-map-marker-alt mr-2 opacity-70"></i> El Poblado</span>
+                            </div>
+                            <a href="https://otoclana.wixsite.com/otoclana/VentaSanLucas" class="mt-6 inline-block bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-[10px] uppercase font-bold tracking-widest transition text-white text-center">Ver Propiedad</a>
+                        </div>
+                    </div>
+
+                    <!-- Venta 2: Desarrollo El Higuerón -->
+                    <div class="min-w-[85%] md:min-w-[450px] relative rounded-3xl overflow-hidden shadow-2xl group/card h-[550px] flex-shrink-0 text-left text-left">
+                        <img src="https://lh3.googleusercontent.com/d/13AHV93VDXtwhLCDtote49dlKexSeNR1W" alt="Venta Finca Desarrollo" class="absolute inset-0 w-full h-full object-cover group-hover/card:scale-110 transition duration-1000">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-10 z-20 text-left">
+                            <h3 class="font-serif text-3xl mb-4 leading-tight text-white text-left text-white">Desarrollo El Higuerón</h3>
+                            <p class="text-slate-300 text-sm mb-6 max-w-xs text-left">Potencial ilimitado para proyectos a 5 min del Aeropuerto.</p>
+                            <div class="grid grid-cols-2 gap-y-3 gap-x-4 text-[11px] font-semibold text-amber-400 uppercase tracking-wider text-left text-white text-white">
+                                <span><i class="fas fa-home mr-2 opacity-70"></i> 2 Casas</span>
+                                <span><i class="fas fa-expand-arrows-alt mr-2 opacity-70"></i> 38.400 m²</span>
+                                <span><i class="fas fa-plane mr-2 opacity-70"></i> Aeropuerto JMC</span>
+                                <span><i class="fas fa-chart-line mr-2 opacity-70"></i> Alta Inversión</span>
+                            </div>
+                            <a href="https://otoclana.wixsite.com/otoclana/VentaHigueron" class="mt-6 inline-block bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-[10px] uppercase font-bold tracking-widest transition text-white text-center">Ver Propiedad</a>
+                        </div>
+                    </div>
+
+                    <!-- Venta 3: Lotes en El Retiro -->
+                    <div class="min-w-[85%] md:min-w-[450px] relative rounded-3xl overflow-hidden shadow-2xl group/card h-[550px] flex-shrink-0 text-left text-left text-left">
+                        <img src="https://lh3.googleusercontent.com/d/124xrxcV6bHXGERDRgqC63R52XXGaYGT1" alt="Lotes El Retiro" class="absolute inset-0 w-full h-full object-cover group-hover/card:scale-110 transition duration-1000 text-left">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-10 z-20 text-left">
+                            <h3 class="font-serif text-3xl mb-4 leading-tight text-white text-left text-white text-white">Lotes en El Retiro</h3>
+                            <p class="text-slate-300 text-sm mb-6 max-w-xs text-left">Nueva urbanización en el sector de mayor valorización.</p>
+                            <div class="grid grid-cols-2 gap-y-3 gap-x-4 text-[11px] font-semibold text-amber-400 uppercase tracking-wider text-left text-white text-white">
+                                <span><i class="fas fa-vector-square mr-2 opacity-70"></i> 2.000m² +</span>
+                                <span><i class="fas fa-mountain mr-2 opacity-70"></i> Topografía Plana</span>
+                                <span><i class="fas fa-shield-alt mr-2 opacity-70"></i> Unidad Cerrada</span>
+                                <span><i class="fas fa-leaf mr-2 opacity-70"></i> Naturaleza</span>
+                            </div>
+                            <a href="https://otoclana.wixsite.com/otoclana/VentaLotesRetiro" class="mt-6 inline-block bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full text-[10px] uppercase font-bold tracking-widest transition text-white text-center text-white">Ver Lotes</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Medellín Urbana / Larga Estadía -->
+    <section id="apartamentos" class="py-24 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 text-center text-center">
+                <span class="text-blue-600 font-bold uppercase tracking-[0.3em] text-xs text-center text-center text-center">Vivienda Urbana</span>
+                <h2 class="font-serif text-4xl md:text-5xl mt-2 text-blue-900 text-center text-blue-900 text-center text-blue-900">Medellín: Larga Estadía</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 text-center text-center">
+                <!-- Urbana 1: Duplex de Lujo -->
+                <div class="flex flex-col md:flex-row bg-slate-50 rounded-3xl overflow-hidden shadow-xl group border border-slate-100 text-left text-left">
+                    <div class="md:w-1/2 overflow-hidden h-64 md:h-auto">
+                        <img src="https://lh3.googleusercontent.com/d/1zAGZ82sQfHHHFOUz5natJrbkWP1kYQFF" alt="Duplex Alquiler" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 text-left text-left text-left">
+                    </div>
+                    <div class="md:w-1/2 p-10 flex flex-col justify-center text-center text-center">
+                        <h3 class="font-serif text-2xl mb-4 text-blue-900 text-center text-blue-900 text-center">Duplex de Lujo</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed text-center text-center">Residencia amoblada de alto nivel para estancias prolongadas en El Poblado.</p>
+                        <a href="duplex_poblado_venta.html" class="text-blue-600 font-bold inline-flex items-center text-sm mx-auto text-center text-center">Ver detalles <i class="fas fa-chevron-right ml-2 text-[10px] text-blue-600"></i></a>
+                    </div>
+                </div>
+
+                <!-- Urbana 2: Mansión Alto de las Palmas -->
+                <div class="flex flex-col md:flex-row bg-slate-50 rounded-3xl overflow-hidden shadow-xl group border border-slate-100 text-left text-left">
+                    <div class="md:w-1/2 overflow-hidden h-64 md:h-auto">
+                        <img src="https://lh3.googleusercontent.com/d/1Z9G7zoCemKUo7YQHO6CcyOgg9HvdAOz7" alt="Mansion Palmas Alquiler" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 text-left text-left text-left">
+                    </div>
+                    <div class="md:w-1/2 p-10 flex flex-col justify-center text-center text-center text-center">
+                        <h3 class="font-serif text-2xl mb-4 text-blue-900 text-center text-blue-900 text-center text-blue-900 text-center">Mansión Alto de las Palmas</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed text-center text-slate-600 text-center text-center">Exclusiva residencia campestre con piscina, jacuzzi y bosque nativo privado.</p>
+                        <a href="mansion_palmas_venta.html" class="text-blue-600 font-bold inline-flex items-center text-sm mx-auto text-center text-center text-blue-600">Ver detalles <i class="fas fa-chevron-right ml-2 text-[10px] text-blue-600"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-slate-950 text-white py-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 border-b border-slate-800 pb-16 text-center md:text-left text-center md:text-left">
+            <div class="col-span-4 md:col-span-2">
+                <div class="text-3xl font-serif font-bold tracking-tighter text-amber-500 mb-6 uppercase text-center md:text-left text-amber-500 text-amber-500 text-amber-500">
+                    OTOCLANA <span class="text-sm font-sans block -mt-2 text-amber-500">S.A.S</span>
+                </div>
+                <p class="text-slate-400 max-w-sm mb-8 mx-auto md:mx-0 text-center md:text-left text-slate-400 text-slate-400">
+                    Gestión inmobiliaria integral en Antioquia. Expertos en alquiler de recreo, vivienda urbana y ventas de lujo.
+                </p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-facebook-f text-white text-white"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-pink-600 transition"><i class="fab fa-instagram text-white text-white text-white"></i></a>
+                </div>
+            </div>
+            <div class="text-center md:text-left text-center md:text-left">
+                <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-white text-white text-white text-white text-white">Servicios</h4>
+                <ul class="text-slate-400 space-y-3 text-sm text-slate-400 text-slate-400 text-slate-400">
+                    <li>Alquiler de Fincas</li>
+                    <li>Vivienda Urbana</li>
+                    <li>Ventas de Lujo</li>
+                    <li>Inversiones</li>
+                </ul>
+            </div>
+            <div class="text-center md:text-left text-center md:text-left text-center md:text-left">
+                <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-white text-white text-white text-white text-white text-white">Contacto</h4>
+                <ul class="text-slate-400 space-y-3 text-sm text-slate-400 text-slate-400 text-slate-400 text-slate-400">
+                    <li><i class="fas fa-phone mr-2"></i> +57 123 456 7890</li>
+                    <li><i class="fas fa-envelope mr-2"></i> info@otoclana.com</li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-center text-slate-600 text-[10px] mt-10 tracking-widest uppercase text-slate-600 text-slate-600 text-slate-600 text-slate-600">© 2026 OTOCLANA S.A.S. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Lógica para el carrusel del Hero
+        const slides = document.querySelectorAll('.hero-slide');
+        let currentSlide = 0;
+
+        function nextHeroSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        setInterval(nextHeroSlide, 5000);
+
+        // Lógica para el carrusel de Ventas (Infinito)
+        const ventasSlider = document.getElementById('ventas-slider');
+        function scrollVentas(direction) {
+            const scrollAmount = 450;
+            const maxScroll = ventasSlider.scrollWidth - ventasSlider.clientWidth;
+            
+            if (direction === 'left') {
+                if (ventasSlider.scrollLeft <= 50) {
+                    ventasSlider.scrollLeft = maxScroll;
+                } else {
+                    ventasSlider.scrollLeft -= scrollAmount;
+                }
+            } else {
+                if (ventasSlider.scrollLeft >= maxScroll - 50) {
+                    ventasSlider.scrollLeft = 0;
+                } else {
+                    ventasSlider.scrollLeft += scrollAmount;
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
