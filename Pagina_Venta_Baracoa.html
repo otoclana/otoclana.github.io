@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edificio Baracoa - Cartagena | OTOCLANA S.A.S</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .accent-amber { color: #f59e0b; }
+        .bg-accent-amber { background-color: #f59e0b; }
+        
+        .portfolio-container {
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .portfolio-container::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navegación con Retorno al Landing -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-left">
+            <!-- Botón de Inicio -->
+            <a href="otoclana_landing.html" class="group transition-all duration-300">
+                <div class="text-xl font-serif font-bold text-blue-900 uppercase tracking-tighter group-hover:text-amber-500 transition-colors">
+                    OTOCLANA <span class="text-amber-500 font-sans text-xs block -mt-1 tracking-widest group-hover:text-blue-900 transition-colors text-left">S.A.S</span>
+                </div>
+            </a>
+            
+            <!-- WhatsApp Actualizado (+57 313 767 6122) -->
+            <a href="https://wa.me/573137676122?text=Hola%2C%20estoy%20interesado%20en%20el%20apartamento%20del%20Edificio%20Baracoa%20en%20Cartagena." 
+               target="_blank" rel="noopener noreferrer"
+               class="bg-blue-900 text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blue-800 transition shadow-md">
+                Consultar
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        
+        <div class="relative z-20 px-4 max-w-5xl pt-20">
+            <span class="bg-amber-500 text-black px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 inline-block shadow-lg text-center">Vista Ininterrumpida a la Bahía</span>
+            <h1 class="font-serif text-5xl md:text-7xl mb-6 drop-shadow-lg italic leading-tight text-center">Edificio Baracoa</h1>
+            <p class="text-xl md:text-2xl font-light mb-10 tracking-[0.2em] uppercase opacity-90 text-center">Cartagena, Bocagrande</p>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <!-- Bloque de Precio Removido / Actualizado a Consultar -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/30 px-8 py-4 rounded-2xl min-w-[200px] shadow-2xl text-center">
+                    <p class="text-[10px] uppercase font-bold tracking-widest opacity-80 text-white">Disponibilidad</p>
+                    <p class="text-2xl font-bold text-white uppercase">Consultar Valor</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/30 px-8 py-4 rounded-2xl min-w-[150px] text-center">
+                    <p class="text-[10px] uppercase opacity-70 tracking-widest text-white">Área</p>
+                    <p class="text-2xl font-bold text-white">195 m²</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/30 px-8 py-4 rounded-2xl min-w-[150px] text-center">
+                    <p class="text-[10px] uppercase opacity-70 tracking-widest text-white">Ubicación</p>
+                    <p class="text-2xl font-bold text-white">Piso 4</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute inset-0 z-0">
+             <img src="https://lh3.googleusercontent.com/d/17DQkmnXR61_uSfxvI0Tmil_Ceo2GELjr" alt="Vista Bahía Baracoa" class="w-full h-full object-cover">
+        </div>
+    </section>
+
+    <!-- Características Destacadas -->
+    <section class="py-16 bg-white shadow-sm relative z-30 -mt-16 mx-4 md:mx-20 rounded-3xl grid grid-cols-2 md:grid-cols-4 gap-8 text-center border border-slate-100 p-8 shadow-2xl items-start">
+        <div class="flex flex-col items-center">
+            <i class="fas fa-anchor text-3xl text-sky-600 mb-3 drop-shadow-sm"></i>
+            <h3 class="font-semibold text-sm uppercase tracking-wider text-center">Frente a Bahía</h3>
+            <p class="text-xs text-slate-400 mt-1 text-center">Vista Ininterrumpida</p>
+        </div>
+        <div class="flex flex-col items-center border-l border-slate-100">
+            <i class="fas fa-bed text-3xl text-blue-900 mb-3 text-blue-900"></i>
+            <h3 class="font-semibold text-sm uppercase tracking-wider text-center">4 Habitaciones</h3>
+            <p class="text-xs text-slate-400 mt-1 text-center">+ Hab. Servicio</p>
+        </div>
+        <div class="flex flex-col items-center border-l border-slate-100">
+            <i class="fas fa-couch text-3xl text-amber-500 mb-3 text-amber-500"></i>
+            <h3 class="font-semibold text-sm uppercase tracking-wider text-center">Gran Sala</h3>
+            <p class="text-xs text-slate-400 mt-1 text-center">Conexión Balcón</p>
+        </div>
+        <div class="flex flex-col items-center border-l border-slate-100">
+            <i class="fas fa-umbrella-beach text-3xl text-indigo-400 mb-3 text-indigo-400"></i>
+            <h3 class="font-semibold text-sm uppercase tracking-wider text-center text-center">Bocagrande</h3>
+            <p class="text-[10px] text-slate-400 mt-1 leading-tight text-center text-center">3 Cuadras de la Playa</p>
+        </div>
+    </section>
+
+    <!-- Descripción Detallada -->
+    <section class="py-24 px-6 max-w-7xl mx-auto text-left">
+        <div class="grid md:grid-cols-2 gap-16 items-center text-left">
+            <div class="space-y-8 text-left">
+                <div class="text-left">
+                    <span class="text-blue-600 font-bold uppercase tracking-[0.3em] text-xs text-left">Exclusividad en Cartagena</span>
+                    <h2 class="font-serif text-4xl md:text-5xl mt-2 mb-6 text-slate-900 leading-tight text-left">Un privilegio visual eterno</h2>
+                    <p class="text-slate-600 leading-relaxed text-lg text-left">
+                        Ubicado directamente sobre la bahía en el prestigioso sector de Bocagrande, este apartamento de 195 m² ofrece una de las pocas vistas en la ciudad que es **imposible de interrumpir** por desarrollos futuros. Disfrute de la entrada de cruceros y el movimiento náutico desde su propia sala.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 gap-4 text-left">
+                    <div class="flex items-start gap-4 p-5 bg-slate-100 rounded-2xl border border-slate-200">
+                        <div class="bg-white p-3 rounded-xl shadow-sm text-blue-900"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="text-left">
+                            <h4 class="font-bold text-sm">Entorno Estratégico</h4>
+                            <p class="text-xs text-stone-500">A solo pasos de la Avenida San Martín, rodeado de los mejores negocios, bancos y gastronomía de la ciudad.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-5 bg-slate-100 rounded-2xl border border-slate-200">
+                        <div class="bg-white p-3 rounded-xl shadow-sm text-blue-900"><i class="fas fa-users"></i></div>
+                        <div class="text-left">
+                            <h4 class="font-bold text-sm">Zonas Sociales Amplias</h4>
+                            <p class="text-xs text-stone-500">Diseñado para recibir invitados, con una sala que se integra magistralmente con el balcón panorámico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative group text-left">
+                <img src="https://lh3.googleusercontent.com/d/1tw1pZ8Jm9Mpl8x69k-cXSdssFXNtp63N" alt="Sala Baracoa" class="rounded-[2.5rem] shadow-3xl group-hover:scale-[1.02] transition duration-700">
+                <div class="absolute -bottom-6 -right-6 bg-blue-900 text-white p-8 rounded-2xl shadow-xl hidden md:block">
+                    <p class="font-serif text-2xl italic">"La bahía es su jardín frontal."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalle de la Vista -->
+    <section class="py-24 bg-slate-900 text-white overflow-hidden text-left">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center text-left">
+            <div class="order-2 md:order-1 relative text-left">
+                 <div class="bg-white/5 p-1 rounded-[2.6rem] text-left">
+                    <img src="https://lh3.googleusercontent.com/d/1-B-xKn-GfnJ1WAwTctvzLvyeNj2cQqt5" alt="Vista Balcón Real" class="rounded-[2.5rem] shadow-2xl opacity-95">
+                 </div>
+            </div>
+            <div class="order-1 md:order-2 text-left">
+                <span class="text-amber-500 font-bold uppercase tracking-[0.3em] text-xs text-left text-amber-500">Ubicación Insuperable</span>
+                <h2 class="font-serif text-4xl md:text-5xl mt-2 mb-8 leading-tight text-white text-left">Tradición y Amplitud</h2>
+                <p class="text-slate-400 mb-8 leading-relaxed text-left">
+                    El Edificio Baracoa representa la solidez arquitectónica de Cartagena. Con espacios generosos que ya no se construyen hoy en día, este cuarto piso ofrece la altura perfecta para sentir la brisa del mar y disfrutar del skyline de Bocagrande.
+                </p>
+                <ul class="space-y-4 text-left">
+                    <li class="flex items-center gap-3 text-sm italic text-white"><i class="fas fa-check text-amber-500"></i> 195 m² de área privada muy bien distribuida.</li>
+                    <li class="flex items-center gap-3 text-sm italic text-white"><i class="fas fa-check text-amber-500"></i> 4 Habitaciones + habitación de servicio completa.</li>
+                    <li class="flex items-center gap-3 text-sm italic text-white"><i class="fas fa-check text-amber-500"></i> Ubicación privilegiada: Brisa, Mar y Ciudad en un solo lugar.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería Visual Portafolio -->
+    <section class="py-24 bg-white overflow-hidden text-left">
+        <div class="max-w-7xl mx-auto px-6 mb-12 flex justify-between items-end text-left">
+            <div class="text-left">
+                <span class="text-blue-900 font-bold uppercase tracking-[0.3em] text-xs text-left text-blue-900">Portafolio</span>
+                <h2 class="font-serif text-4xl mt-2 text-slate-900 text-left">Galería de Espacios</h2>
+            </div>
+            <div class="flex gap-4 mb-2 text-left">
+                <button onclick="scrollPortfolio('left')" class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center hover:bg-blue-900 hover:text-white transition duration-300 shadow-md">
+                    <i class="fas fa-chevron-left text-blue-900"></i>
+                </button>
+                <button onclick="scrollPortfolio('right')" class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center hover:bg-blue-900 hover:text-white transition duration-300 shadow-md text-left">
+                    <i class="fas fa-chevron-right text-blue-900"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="portfolio-slider" class="portfolio-container flex gap-6 overflow-x-auto px-6 md:px-[calc((100vw-1280px)/2+24px)] pb-12 scroll-smooth text-left">
+            
+            <div class="min-w-[80vw] md:min-w-[500px] h-[600px] rounded-3xl overflow-hidden shadow-xl flex-shrink-0 relative group text-left">
+                <img src="https://lh3.googleusercontent.com/d/16hiuvJWoHG6W11bMRAA77Rwnhun-Mhl9" class="w-full h-full object-cover group-hover:scale-105 transition duration-1000">
+                <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/70 to-transparent">
+                    <p class="text-white font-serif text-xl">Skyline Bocagrande</p>
+                </div>
+            </div>
+
+            <div class="min-w-[80vw] md:min-w-[500px] h-[600px] rounded-3xl overflow-hidden shadow-xl flex-shrink-0 relative group text-left">
+                <img src="https://lh3.googleusercontent.com/d/1bIdQXKmj_nLdGqyilMGoaIkgiqcJQAMY" class="w-full h-full object-cover group-hover:scale-105 transition duration-1000">
+                <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/70 to-transparent">
+                    <p class="text-white font-serif text-xl">Espacios de Gran Formato</p>
+                </div>
+            </div>
+
+            <div class="min-w-[80vw] md:min-w-[500px] h-[600px] rounded-3xl overflow-hidden shadow-xl flex-shrink-0 relative group text-left">
+                <img src="https://lh3.googleusercontent.com/d/17DQkmnXR61_uSfxvI0Tmil_Ceo2GELjr" class="w-full h-full object-cover group-hover:scale-105 transition duration-1000">
+                <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/70 to-transparent">
+                    <p class="text-white font-serif text-xl">Vista Panorámica</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action Final -->
+    <section class="py-24 text-center px-4 bg-slate-900 text-white text-center">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-serif text-4xl md:text-5xl mb-6 text-center text-white">Asegure su Refugio en el Caribe</h2>
+            <p class="text-xl text-slate-400 mb-12 leading-relaxed text-center">
+                Una oportunidad irrepetible en Cartagena. Inmuebles con este metraje y vista ininterrumpida son escasos.
+            </p>
+            
+            <div class="bg-white/5 p-12 rounded-[3rem] border border-white/10 shadow-3xl text-center text-white">
+                <p class="text-xs uppercase tracking-[0.4em] text-amber-500 mb-4 font-bold tracking-widest text-center text-amber-500">Inversión Exclusiva</p>
+                <div class="mb-10 text-center">
+                    <!-- Referencia numérica removida -->
+                    <h3 class="text-4xl md:text-5xl font-serif font-bold text-white mb-2">Precio a Consultar</h3>
+                    <p class="text-xl text-slate-400 font-light italic text-center text-slate-400">Edificio Baracoa | Piso 4</p>
+                </div>
+                
+                <!-- WhatsApp Actualizado (+57 313 767 6122) y texto filtrado -->
+                <a href="https://wa.me/573137676122?text=Hola%2C%20quisiera%20recibir%20el%20dossier%20de%20precios%20y%20m%C3%A1s%20informaci%C3%B3n%20del%20Edificio%20Baracoa%20en%20Cartagena." 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="bg-blue-600 hover:bg-blue-700 text-white px-14 py-5 rounded-full text-xl font-bold transition transform hover:scale-105 shadow-xl inline-flex items-center text-center">
+                    <i class="fab fa-whatsapp mr-3 text-2xl text-center text-white"></i> Solicitar Información
+                </a>
+            </div>
+            <p class="mt-12 text-slate-500 text-[10px] tracking-widest uppercase text-center text-slate-500">Propiedad Gestionada por <strong>OTOCLANA S.A.S</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-700 py-10 text-center text-[10px] tracking-widest uppercase border-t border-slate-900 text-center text-gray-700">
+        <p>© 2026 OTOCLANA S.A.S - Consultoría Inmobiliaria de Lujo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script para el carrusel -->
+    <script>
+        const slider = document.getElementById('portfolio-slider');
+        
+        function scrollPortfolio(direction) {
+            const scrollAmount = window.innerWidth > 768 ? 524 : 340; 
+            if (direction === 'left') {
+                slider.scrollLeft -= scrollAmount;
+            } else {
+                slider.scrollLeft += scrollAmount;
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotes El Retiro - Inversión & Naturaleza | OTOCLANA S.A.S</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Carrusel Portafolio */
+        .portfolio-container {
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .portfolio-container::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-slate-900">
+
+    <!-- Navegación Rápida con Botón de Retorno -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-left">
+            <!-- Logotipo interactivo para volver al landing -->
+            <a href="https://otoclana.wixsite.com/otoclana" class="group transition-all duration-300">
+                <div class="text-xl font-serif font-bold text-green-900 uppercase tracking-tighter text-left group-hover:text-amber-600 transition-colors text-left">
+                    OTOCLANA <span class="text-amber-500 font-sans text-xs block -mt-1 tracking-widest group-hover:text-green-900 transition-colors">S.A.S</span>
+                </div>
+            </a>
+
+            <!-- WhatsApp Actualizado (+573137676122) -->
+            <a href="https://wa.me/573137676122?text=Hola%2C%20estoy%20interesado%20en%20los%20lotes%20en%20El%20Retiro." 
+               class="bg-green-800 text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-green-700 transition shadow-lg">
+                Agendar Visita
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black/30 z-10 text-center"></div>
+        
+        <div class="relative z-20 px-4 max-w-5xl pt-20 text-center">
+            <span class="bg-white text-green-900 px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 inline-block shadow-xl text-center">Proyecto Urbanístico Privado</span>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 drop-shadow-2xl leading-tight text-center text-white">Lotes El Retiro</h1>
+            <p class="text-xl md:text-2xl font-light mb-10 tracking-[0.3em] uppercase opacity-95 text-center text-white">Donde tu hogar comienza con el paisaje</p>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="bg-green-900/80 backdrop-blur-md text-white px-8 py-4 rounded-2xl min-w-[220px] shadow-2xl border border-white/20 text-center">
+                    <p class="text-[10px] uppercase font-bold tracking-widest opacity-80 text-white">Áreas Disponibles</p>
+                    <p class="text-2xl font-bold text-white">Desde 2.000 m²</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/30 px-8 py-4 rounded-2xl min-w-[180px] text-center">
+                    <p class="text-[10px] uppercase opacity-70 tracking-widest text-white">Ubicación</p>
+                    <p class="text-2xl font-bold text-white">Cerca al Pueblo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute inset-0 z-0">
+             <img src="https://lh3.googleusercontent.com/d/124xrxcV6bHXGERDRgqC63R52XXGaYGT1" alt="Paisaje El Retiro Lotes" class="w-full h-full object-cover">
+        </div>
+    </section>
+
+    <!-- Resumen de Características -->
+    <section class="py-16 bg-white shadow-sm relative z-30 -mt-16 mx-4 md:mx-20 rounded-3xl grid grid-cols-2 md:grid-cols-4 gap-8 text-center border border-stone-100 p-8 shadow-2xl items-start">
+        <div class="flex flex-col items-center justify-center">
+            <i class="fas fa-expand-arrows-alt text-3xl text-purple-600 mb-3"></i>
+            <h3 class="font-semibold text-sm uppercase tracking-wider text-center">Gran Formato</h3>
+            <p class="text-xs text-stone-400 mt-1 text-center">Desde 2.000 m²</p>
+        </div>
+        <div class="flex flex-col items-center border-l border-stone-100 justify-center">
+            <i class="fas fa-shield-alt text-3xl text-blue-600 mb-3"></i>
+            <h3 class="font-semibold text-sm uppercase tracking-wider text-center">Seguridad</h3>
+            <p class="text-xs text-stone-400 mt-1 text-center">Unidad Cerrada</p>
+        </div>
+        <div class="flex flex-col items-center border-l border-stone-100 justify-center">
+            <i class="fas fa-mountain text-3xl text-amber-800 mb-3"></i>
+            <h3 class="font-semibold text-sm uppercase tracking-wider text-center">Topografía</h3>
+            <p class="text-xs text-stone-400 mt-1 text-center">Planos y Ondulados</p>
+        </div>
+        <div class="flex flex-col items-center border-l border-stone-100 justify-center">
+            <i class="fas fa-tree text-3xl text-green-600 mb-3"></i>
+            <h3 class="font-semibold text-sm uppercase tracking-wider text-center text-center">Naturaleza</h3>
+            <p class="text-xs text-stone-400 mt-1 text-center text-center">Entorno Virgen</p>
+        </div>
+    </section>
+
+    <!-- Descripción Detallada -->
+    <section class="py-24 px-6 max-w-7xl mx-auto text-left">
+        <div class="grid md:grid-cols-2 gap-16 items-center text-left">
+            <div class="space-y-8 text-left">
+                <div class="text-left">
+                    <span class="text-green-700 font-bold uppercase tracking-[0.3em] text-xs text-left">Exclusividad Rural</span>
+                    <h2 class="font-serif text-4xl md:text-5xl mt-2 mb-6 text-slate-900 leading-tight text-left">El lienzo perfecto para tu proyecto de vida</h2>
+                    <p class="text-slate-600 leading-relaxed text-lg text-left">
+                        Descubre la libertad de construir a tu medida en una de las zonas de mayor valorización del Oriente Antioqueño. Nuestros lotes en El Retiro ofrecen una variedad de ubicaciones estratégicas dentro de una unidad cerrada de alto nivel, garantizando privacidad, seguridad y una conexión inmediata con la naturaleza.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 gap-4 text-left">
+                    <div class="flex items-start gap-4 p-5 bg-stone-100 rounded-2xl border border-stone-200 text-left">
+                        <div class="bg-white p-3 rounded-xl shadow-sm text-green-800 text-left"><i class="fas fa-map-pin"></i></div>
+                        <div class="text-left">
+                            <h4 class="font-bold text-sm text-left">Cercanía Estratégica</h4>
+                            <p class="text-xs text-stone-500 text-left">A pocos minutos del casco urbano de El Retiro, combinando la vida de campo con servicios de la ciudad.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-5 bg-stone-100 rounded-2xl border border-stone-200 text-left">
+                        <div class="bg-white p-3 rounded-xl shadow-sm text-blue-600 text-left"><i class="fas fa-shield-alt text-left"></i></div>
+                        <div class="text-left">
+                            <h4 class="font-bold text-sm text-left">Seguridad Privada</h4>
+                            <p class="text-xs text-stone-500 text-left">Unidad cerrada con control de acceso y vigilancia permanente para su tranquilidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative group text-left">
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80" alt="Vista Paisaje Lotes" class="rounded-[3rem] shadow-3xl group-hover:scale-[1.02] transition duration-1000 text-left">
+                <div class="absolute -bottom-6 -right-6 bg-green-900 text-white p-8 rounded-3xl shadow-2xl hidden md:block text-left text-white">
+                    <p class="font-serif text-3xl italic text-center text-white">"Más que tierra, es un legado."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por qué El Retiro -->
+    <section class="py-24 bg-green-900 text-white overflow-hidden text-left text-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center text-left">
+            <div class="order-2 md:order-1 relative text-left">
+                 <div class="grid grid-cols-2 gap-4 text-white">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" class="rounded-2xl h-64 w-full object-cover" alt="Montañas El Retiro">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=600&q=80" class="rounded-2xl h-64 w-full object-cover mt-8" alt="Bosque El Retiro">
+                 </div>
+            </div>
+            <div class="order-1 md:order-2 text-left">
+                <span class="text-amber-500 font-bold uppercase tracking-[0.3em] text-xs text-left">Ubicación Premium</span>
+                <h2 class="font-serif text-4xl md:text-5xl mt-2 mb-8 leading-tight text-white text-left">El mejor microclima de Antioquia</h2>
+                <p class="text-stone-300 mb-8 leading-relaxed text-left">
+                    El Retiro se ha consolidado como el municipio con mejor calidad de vida del Oriente. Su clima fresco, su seguridad y su oferta gastronómica y cultural lo convierten en el lugar ideal para familias que buscan un cambio de aire sin perder la comodidad.
+                </p>
+                <ul class="space-y-4 text-left">
+                    <li class="flex items-center gap-3 text-sm italic text-white text-left text-white"><i class="fas fa-check text-amber-500 text-left"></i> Unidad cerrada con portería y vigilancia permanente.</li>
+                    <li class="flex items-center gap-3 text-sm italic text-white text-left text-white text-left text-white"><i class="fas fa-check text-amber-500 text-left"></i> Redes de servicios públicos en la puerta del lote.</li>
+                    <li class="flex items-center gap-3 text-sm italic text-white text-left text-white text-left text-left text-left"><i class="fas fa-check text-amber-500 text-left"></i> Variedad de opciones desde 2.000 m² en adelante.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTAFOLIO VISUAL -->
+    <section class="py-24 bg-white overflow-hidden text-left">
+        <div class="max-w-7xl mx-auto px-6 mb-12 flex justify-between items-end text-left text-left">
+            <div class="text-left">
+                <span class="text-green-900 font-bold uppercase tracking-[0.3em] text-xs text-left text-left">Explora el Terreno</span>
+                <h2 class="font-serif text-4xl mt-2 text-slate-900 text-left text-left text-left">Vistas y Topografías</h2>
+            </div>
+            <div class="flex gap-4 mb-2 text-left text-left">
+                <button onclick="scrollPortfolio('left')" class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center hover:bg-green-800 hover:text-white transition duration-300 shadow-md text-left text-left text-left text-left">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button onclick="scrollPortfolio('right')" class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center hover:bg-green-800 hover:text-white transition duration-300 shadow-md text-left text-left text-left text-left text-left text-left">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="portfolio-slider" class="portfolio-container flex gap-6 overflow-x-auto px-6 md:px-[calc((100vw-1280px)/2+24px)] pb-12 scroll-smooth text-left text-left">
+            
+            <div class="min-w-[80vw] md:min-w-[600px] h-[450px] rounded-3xl overflow-hidden shadow-xl flex-shrink-0 relative group text-left text-left text-left text-left">
+                <img src="https://lh3.googleusercontent.com/d/124xrxcV6bHXGERDRgqC63R52XXGaYGT1" class="w-full h-full object-cover group-hover:scale-105 transition duration-1000" alt="Lote en explanación">
+                <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/70 to-transparent text-left text-left text-left text-left">
+                    <p class="text-white font-serif text-xl text-left text-left text-white text-left">Lotes en Explanación</p>
+                </div>
+            </div>
+
+            <div class="min-w-[80vw] md:min-w-[400px] h-[450px] rounded-3xl bg-stone-100 border-2 border-green-900/10 flex items-center justify-center p-12 text-green-900 text-center font-serif italic shadow-xl flex-shrink-0 text-center text-center">
+                <p class="text-2xl leading-snug text-center text-center text-green-900">
+                    "Un entorno donde el silencio solo es interrumpido por el sonido de la naturaleza."
+                </p>
+            </div>
+
+            <div class="min-w-[80vw] md:min-w-[500px] h-[450px] rounded-3xl overflow-hidden shadow-xl flex-shrink-0 relative group text-left text-left text-left text-left">
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-1000" alt="Paisaje natural">
+                <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/70 to-transparent text-left text-left text-left text-left">
+                    <p class="text-white font-serif text-xl text-left text-left text-white text-left text-left">Vistas Panorámicas</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action Comercial con WhatsApp Actualizado (+573137676122) -->
+    <section class="py-24 text-center px-4 bg-stone-900 text-white text-center text-center text-center">
+        <div class="max-w-4xl mx-auto text-center text-center text-center text-center">
+            <h2 class="font-serif text-4xl md:text-6xl mb-6 text-white text-center text-center text-center">Asegura tu Espacio</h2>
+            <p class="text-xl text-stone-400 mb-12 leading-relaxed text-center text-white text-center text-center text-center text-center">
+                Disponibilidad limitada de lotes de gran formato. Consulta el plano de lotes disponibles y precios actualizados.
+            </p>
+            
+            <div class="bg-white/5 p-12 rounded-[3.5rem] border border-white/10 shadow-3xl text-center text-white text-center text-center text-center text-center">
+                <p class="text-xs uppercase tracking-[0.4em] text-amber-500 mb-4 font-bold tracking-widest text-center text-white text-center text-center text-center">Precios de Oportunidad</p>
+                <div class="mb-10 text-center text-white text-center text-center text-center text-center">
+                    <h3 class="text-3xl font-serif mb-2 text-white text-center text-center text-center">Valor según ubicación y metraje</h3>
+                    <p class="text-stone-400 font-light italic text-white text-center text-center text-center text-center">Lotes desde 2.000 m² hasta 3.000 m²</p>
+                </div>
+                
+                <!-- WhatsApp Actualizado (+573137676122) -->
+                <a href="https://wa.me/573137676122?text=Hola%2C%20quisiera%20recibir%20el%20listado%20de%20precios%20y%20disponibilidad%20de%20los%20lotes%20en%20El%20Retiro." 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="bg-green-700 hover:bg-green-600 text-white px-14 py-5 rounded-full text-xl font-bold transition transform hover:scale-105 shadow-xl inline-flex items-center text-center text-center text-center text-center text-center">
+                    <i class="fab fa-whatsapp mr-3 text-2xl text-center text-white text-center text-center text-center text-center text-center text-center"></i> Consultar Disponibilidad
+                </a>
+            </div>
+            <p class="mt-12 text-slate-500 text-[10px] tracking-widest uppercase text-center text-center text-slate-500 text-center text-center text-center text-center text-center">Propiedad Gestionada por <strong>OTOCLANA S.A.S</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-stone-700 py-12 text-center text-[10px] tracking-widest uppercase text-center text-center text-gray-700 text-center text-center text-center border-t border-stone-900">
+        <p>© 2026 OTOCLANA S.A.S - Consultoría en Propiedad Raíz Premium. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script para el carrusel -->
+    <script>
+        const slider = document.getElementById('portfolio-slider');
+        
+        function scrollPortfolio(direction) {
+            const scrollAmount = window.innerWidth > 768 ? 450 : 340; 
+            if (direction === 'left') {
+                slider.scrollLeft -= scrollAmount;
+            } else {
+                slider.scrollLeft += scrollAmount;
+            }
+        }
+    </script>
+
+</body>
+</html>

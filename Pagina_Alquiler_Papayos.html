@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacienda Papayos - Folleto | OTOCLANA S.A.S</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .accent-yellow { color: #eab308; }
+        .bg-accent-yellow { background-color: #eab308; }
+        .accent-blue { color: #1e40af; }
+        .bg-accent-blue { background-color: #1e40af; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navegación con Retorno al Landing -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-left">
+            <!-- Botón de Inicio -->
+            <a href="https://otoclana.wixsite.com/otoclana" class="group transition-all duration-300 text-left">
+                <div class="text-xl font-serif font-bold text-blue-900 uppercase tracking-tighter group-hover:text-amber-600 transition-colors text-left">
+                    OTOCLANA <span class="text-amber-500 font-sans text-xs block -mt-1 tracking-widest group-hover:text-blue-900 transition-colors">S.A.S</span>
+                </div>
+            </a>
+            
+            <!-- WhatsApp Actualizado (+57 313 767 6122) -->
+            <a href="https://wa.me/573137676122?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Hacienda%20Papayos." 
+               target="_blank" rel="noopener noreferrer"
+               class="bg-blue-900 text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blue-800 transition shadow-md">
+                Reservar
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black/40 z-10 text-center"></div>
+        
+        <div class="relative z-20 px-4 pt-20">
+            <h1 class="font-serif text-5xl md:text-7xl mb-4 drop-shadow-lg text-center">Hacienda Papayos</h1>
+            <p class="text-xl md:text-2xl font-light mb-8 tracking-widest uppercase text-center">Tu paraíso privado te espera</p>
+            <div class="bg-white/20 backdrop-blur-md border border-white/30 inline-block px-6 py-3 rounded-full text-lg">
+                <i class="fas fa-users mr-2"></i> Capacidad hasta 30 personas
+            </div>
+        </div>
+
+        <div class="absolute inset-0 z-0">
+             <div class="w-full h-full bg-cover bg-center opacity-90 text-center" style="background-image: url('https://lh3.googleusercontent.com/d/14IckryA0TD3BnpVg4Enpfq4y7JJr79g9');">
+             </div>
+        </div>
+    </section>
+
+    <!-- Amenidades Rápidas -->
+    <section class="py-12 bg-white shadow-sm relative z-30 -mt-10 mx-4 md:mx-20 rounded-xl grid grid-cols-2 md:grid-cols-4 gap-6 text-center border border-gray-100">
+        <div class="flex flex-col items-center">
+            <i class="fas fa-swimming-pool text-3xl accent-blue mb-2"></i>
+            <p class="font-semibold text-center">Piscina</p>
+        </div>
+        <div class="flex flex-col items-center border-l md:border-l border-gray-100">
+            <i class="fas fa-fire-alt text-3xl text-orange-600 mb-2"></i>
+            <p class="font-semibold text-center">Asador & Ahumador</p>
+        </div>
+        <div class="flex flex-col items-center border-l md:border-l border-gray-100">
+            <i class="fas fa-bread-slice text-3xl text-amber-800 mb-2"></i>
+            <p class="font-semibold text-center">Horno de Leña</p>
+        </div>
+        <div class="flex flex-col items-center border-l md:border-l border-gray-100 text-center">
+            <i class="fas fa-wifi text-3xl text-green-600 mb-2"></i>
+            <p class="font-semibold text-center">Wifi & Confort</p>
+        </div>
+    </section>
+
+    <!-- Descripción y Espacios -->
+    <section class="py-20 px-6 max-w-6xl mx-auto text-left">
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-4xl mb-4 text-center">Un refugio de color y tradición</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto italic text-center">Disfruta de amplios espacios sociales diseñados para crear recuerdos inolvidables con tu familia o amigos.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-20 text-left">
+            <div class="text-left">
+                <h3 class="text-2xl font-semibold accent-blue mb-4 text-left">Zonas Sociales Incomparables</h3>
+                <p class="leading-relaxed mb-6 text-left">Contamos con múltiples salas y comedores abiertos que integran la frescura del exterior con el confort de la hacienda. Desde nuestro kiosko con hamacas hasta balcones con vistas panorámicas, cada rincón está pensado para el descanso.</p>
+                <ul class="space-y-3 text-left">
+                    <li class="flex items-center text-left"><i class="fas fa-check-circle accent-yellow mr-2"></i> Gran kiosko con hamacas para la siesta perfecta.</li>
+                    <li class="flex items-center text-left"><i class="fas fa-check-circle accent-yellow mr-2"></i> Balcones amplios en el segundo piso.</li>
+                    <li class="flex items-center text-left"><i class="fas fa-check-circle accent-yellow mr-2"></i> Habitaciones cómodas, todas con <strong>baño privado</strong>.</li>
+                </ul>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="rounded-lg overflow-hidden h-48 shadow-lg bg-gray-200">
+                    <img src="https://lh3.googleusercontent.com/d/1Hkih_z4IegswNfCUmmf9AYkthA8Xl12p" alt="Kiosko Hacienda Papayos" class="w-full h-full object-cover">
+                </div>
+                <div class="rounded-lg overflow-hidden h-48 shadow-lg mt-8 bg-gray-200">
+                    <img src="https://lh3.googleusercontent.com/d/1y1nWfEsMRQUortz467D4565JQrTpuC5l" alt="Balcón Hacienda Papayos" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Gastronomía -->
+        <div class="bg-blue-900 text-white rounded-3xl overflow-hidden grid md:grid-cols-2 shadow-2xl text-left text-white">
+            <div class="p-12 flex flex-col justify-center text-left">
+                <h3 class="font-serif text-3xl mb-6 italic text-yellow-400 text-left">Sabor a Leña y Tradición</h3>
+                <p class="mb-6 opacity-90 leading-relaxed text-lg text-left">
+                    ¿Qué tal una pizza artesanal o un asado al barril frente a la piscina? 
+                    Nuestra infraestructura gastronómica es de primer nivel:
+                </p>
+                <div class="space-y-4 text-sm uppercase tracking-widest font-semibold text-left">
+                    <p class="flex items-center"><span class="w-8 h-px bg-yellow-400 mr-3"></span> Horno de Leña Tradicional</p>
+                    <p class="flex items-center"><span class="w-8 h-px bg-yellow-400 mr-3"></span> Ahumador y Asador de Gran Capacidad</p>
+                </div>
+                <div class="mt-8 p-4 border border-yellow-400/30 bg-yellow-400/10 rounded-xl text-left">
+                    <p class="text-yellow-400 font-bold text-left">¡Servicio de Cocina!</p>
+                    <p class="text-sm text-left">Ofrecemos servicio de cocina profesional por un valor adicional para que tú solo te encargues de disfrutar.</p>
+                </div>
+            </div>
+            <div class="relative min-h-[300px] bg-gray-300">
+                <img src="https://lh3.googleusercontent.com/d/1u-J9WvhSPfjIxlB-_Zx7-NimEc_y60Ke" alt="Horno De Leña Papayos" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <!-- Ofertas y Contacto -->
+    <section class="py-20 text-center px-4">
+        <div class="bg-yellow-50 border-2 border-dashed border-yellow-400 max-w-4xl mx-auto p-10 rounded-3xl mb-12 text-center text-gray-800">
+            <h3 class="text-3xl font-bold text-gray-800 mb-4 text-center">¿Planeando un descanso en semana?</h3>
+            <p class="text-xl mb-6 text-center">Aprovecha nuestros <strong>precios especiales</strong> por estadías de lunes a jueves.</p>
+            <div class="flex flex-wrap justify-center gap-4 text-center">
+                <span class="bg-yellow-400 px-6 py-2 rounded-full font-bold shadow-md uppercase text-sm tracking-widest">Días de Sol en semana</span>
+                <span class="bg-blue-800 text-white px-6 py-2 rounded-full font-bold shadow-md uppercase text-sm tracking-widest">Descuentos Corporativos</span>
+            </div>
+        </div>
+
+        <h2 class="font-serif text-4xl mb-8 text-center">¡Reserva Hoy Mismo!</h2>
+        <div class="flex flex-col md:flex-row justify-center gap-6 items-center text-center">
+            <!-- Botón de WhatsApp Actualizado (+57 313 767 6122) -->
+            <a href="https://wa.me/573137676122?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Hacienda%20Papayos" 
+               target="_blank" rel="noopener noreferrer" 
+               class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-xl font-semibold transition shadow-xl inline-flex items-center text-center text-white">
+                <i class="fab fa-whatsapp text-2xl mr-3 text-white"></i> Contactar por WhatsApp
+            </a>
+            <p class="text-gray-500 text-lg text-center">Hacienda Papayos - El lugar donde querrás volver.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-500 py-10 text-center text-sm text-center">
+        <p>© 2026 Hacienda Papayos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
